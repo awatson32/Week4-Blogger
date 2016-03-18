@@ -12,7 +12,9 @@ node_modules
 ```
 
 ## API
-The API for this lab is being provided for you. It is available at http://localhost:3000/api. To start it up, make sure your terminal is opened to the root of your project folder. Then run `nodemon`. This server follows standard REST guidelines. Specifically, you have access to the following endpoints:
+The API for this lab is being provided for you. It is available at http://localhost:3000/api. To start it up, make sure your terminal 
+is opened to the root of your project folder. Then run `nodemon`. This server follows standard REST guidelines. Specifically, 
+you have access to the following endpoints:
 * GET `http://localhost:3000/api/posts` - Get an array of all blog posts
 * POST `http://localhost:3000/api/posts` - Store the blog post. Returns the unique id of the newly stored post (standard behavior for APIs).
 * GET `http://localhost:3000/api/posts/[some_id]` - Get the specific blog post with the given id
@@ -64,7 +66,8 @@ You should attempt to use `$resource` for this project, instead of using `$http`
         -when the button is clicked, navigate to the singlepost view and show just that one post
 	controller:
 		-enable user to switch between views (navigating to the single post view)
-		-using factory service make a query to retrive all post .then (see what i did there (: ) set the posts on the $scope property for display
+		-using factory service make a query to retrive all post .then (see what i did there (: ) set the posts on the 
+            $scope property for display
 
 ##### server (provided)
 * server.js - ALREADY IMPLEMENTED - server side code with [nodejs](https://nodejs.org/en/docs/)

@@ -11,5 +11,8 @@ myBlogApp.config(['$routeProvider', function($routeProvider) {
     .when('/newpost', {
         templateUrl: 'views/newpost.html',
         controller: 'NewPostController'
+    })
+    .otherwise({
+        redirectTo: '/blogposts.html'
     });
 }]);
