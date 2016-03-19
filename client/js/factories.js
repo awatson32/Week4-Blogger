@@ -2,11 +2,7 @@
 
 var app = angular.module('app', ['ngResource']);
 app.factory('BlogService', ['$resource', function($resource) {
-    return $resource('http://localhost:3000/api/posts', null,
-        {
-            'query': {method: 'get'}
-        })
-    
+        return $resource('/api/posts');
 }]);
 
 

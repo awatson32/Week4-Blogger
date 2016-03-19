@@ -2,3 +2,8 @@ form {
     margin-left: 20em;
     width: 500px;
 }
+
+.newPost {
+    margin-left: 50px;
+    text-align: center;
+}

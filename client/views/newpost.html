@@ -1,16 +1,16 @@
 <form>
     <div class="form-group">
         <label for="blogTitle">Title</label>
-        <input type="text" class="form-control" placeholder="Title">
+        <input type="text" class="form-control" placeholder="Title" ng-model="post.title">
     </div>
     <div class="form-group">
         <label for="blogAuthor">Author</label>
-        <input type="text" class="form-control" placeholder="Author">
+        <input type="text" class="form-control" placeholder="Author" ng-model="post.author">
     </div>
     <div class="form-group">
         <label for="blogPost">New Post</label>
-        <textarea class="form-control" rows="3" placeholder="What's Happening?"></textarea>
+        <textarea class="form-control" rows="3" placeholder="What's Happening?" ng-model="post.content"></textarea>
     </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" class="btn btn-primary" ng-click="createPost()">Submit</button>
 </form>
 
