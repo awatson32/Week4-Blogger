@@ -8,6 +8,13 @@ controllers.controller('BlogController', ['$scope', function($scope, BlogService
 }]);
 controllers.controller('NewPostController', ['$scope', function($scope, BlogService) {
     $scope.createPost = function() {
-        BlogService.save($scope.posts);
+        var post = {
+            title: $scope.title,
+            author: $scope.author,
+            content: $scope.content
+            }
+            console.log(post);
+            BlogService.save('post');
     }
+    
 }]);
