@@ -3,6 +3,7 @@
 var app = angular.module('app', ['ngResource']);
 app.factory('BlogService', ['$resource', function($resource) {
         return $resource('/api/posts');
+        
 }]);
 
 
